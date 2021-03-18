@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Cookie Test Gang</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1>Hello There</h1>
+      <form action="/get-cookies" method="POST">
+        <input required type="text" name="name" placeholder="Name"></input>
+        <button id="set-js-cookie">Set JS Cookie 🍪</button>
+        <button type="submit">Set HTTP Cookie 🍪</button>
+      </form>
+     <div class="get-cookie">
+      <button id="get-js-cookie">Get JS Cookie</button>
+      <a href="/"><button>Get HTTP Cookie</button></a> 
+
+     </div>
+     <p id="cookie-val"></p>
+      <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+      <script src="cookie.js"></script>
+    </body>
+  </html>
